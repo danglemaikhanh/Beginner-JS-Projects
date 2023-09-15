@@ -1,0 +1,26 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #222;
+    --secondary-color: #e4e4e4;
+}
+.dark {
+    --primary-color: #fff;
+    --secondary-color: #222;
+}
+body {
+    margin: 20% 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.navbar { display: flex; justify-content: center; align-items: center; align-content: center; gap: 1rem; }
+.navbar__theme img { width: 50px; cursor: pointer; }
+.navbar__lists li { display: inline-block; list-style: none; margin: 10px 20px; }
+.navbar__lists li a { text-decoration: none; text-transform: uppercase; font-weight: bold; color: var(--primary-color); }
+.themeButton-h {
+    display: none;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
