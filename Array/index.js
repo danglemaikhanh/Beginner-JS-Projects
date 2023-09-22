@@ -43,3 +43,17 @@ function removeEverySecondElement(arr) {
 }
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(removeEverySecondElement(myArray));
+
+// return integer of the count of String
+function strCount(str, letter){  
+    console.log(str);
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        console.log(str[i])
+        if (str[i] === letter) {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(strCount('Nico', 'i'));
